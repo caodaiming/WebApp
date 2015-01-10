@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="WebApp.Data.Configuration.CommodityConfiguration">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Configuration\CommodityConfiguration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebApp.Data.Configuration.CategoryConfiguration">
+    <Position X="7" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Configuration\CotegoryConfiguration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebApp.Data.Configuration.UserProfileConfiguration">
+    <Position X="11.25" Y="2.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Configuration\UserProfileConfiguration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebApp.Data.Infrastructure.DatabaseFactory" Collapsed="true">
+    <Position X="9" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>Infrastructure\DatabaseFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WebApp.Data.Infrastructure.Disposable" Collapsed="true">
+    <Position X="9" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAACAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\Disposable.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WebApp.Data.Infrastructure.Page">
+    <Position X="11.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAEAA=</HashCode>
+      <FileName>Infrastructure\Page.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebApp.Data.Infrastructure.PageingExtensions">
+    <Position X="7.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\Page.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebApp.Data.Infrastructure.RepositoryBase&lt;T&gt;">
+    <Position X="3" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>gAYAAAAAAAAgAgBAAAAAAAAAAAEAAAAACgAAAIAAAIA=</HashCode>
+      <FileName>Infrastructure\RepositoryBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebApp.Data.Infrastructure.UnitOfWork" BaseTypeListCollapsed="true">
+    <Position X="9.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAEAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>Infrastructure\UnitOfWork.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="WebApp.Data.Repository.CategoryRepository">
+    <Position X="5.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repository\CategoryRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WebApp.Data.Repository.CommodityRepository">
+    <Position X="0.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repository\CommodityRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WebApp.Data.Repository.UserProfileRepository">
+    <Position X="3" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repository\UserProfileRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WebApp.Data.WebAppEntities">
+    <Position X="7.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAEAAEAQAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>WebAppEntities.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WebApp.Data.WebAppSampleData">
+    <Position X="11.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WebAppSampleData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="WebApp.Data.Infrastructure.IDatatbaseFactory">
+    <Position X="7.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\IDatatbaseFactory.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="WebApp.Data.Infrastructure.IRepository&lt;T&gt;">
+    <Position X="2.25" Y="7" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAgAABAAAAAAAAAAAEAAAAAAgAAAAAAAIA=</HashCode>
+      <FileName>Infrastructure\IRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="WebApp.Data.Infrastructure.IUnitOfWork">
+    <Position X="9.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Infrastructure\IUnitOfWork.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="WebApp.Data.Repository.ICategoryRepository">
+    <Position X="0.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repository\CategoryRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="WebApp.Data.Repository.ICommoidityRepository">
+    <Position X="5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repository\CommodityRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="WebApp.Data.Repository.IUserProfileRepository">
+    <Position X="2.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repository\UserProfileRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

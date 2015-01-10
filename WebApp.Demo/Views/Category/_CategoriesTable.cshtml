@@ -1,0 +1,50 @@
+﻿@model WebApp.Demo.ViewModels.CategoryPageViewModel
+          <style>
+              .pagination {
+               margin:0px 0px;
+              }
+          </style>
+
+@if (Model.CategoryList.Any())
+{
+    <div class="panel panel-title panel-primary">
+        <div class="panel-heading ">
+            分类列表
+        </div>
+        <div class="panel-body">
+            <table class="table table-striped table-hover table-bordered table-responsive">
+                <tr>
+                    <td>CategoryList</td>
+                    <td>CategoryName</td>
+                    <td>CategoryInfo</td>
+                </tr>
+
+                @foreach (var item in Model.CategoryList)
+                {
+                <tr>
+                    <td>@item.CategoryId</td>
+                    <td>@item.CategoryName</td>
+                    <td>@item.CategoryInfo</td>
+                </tr>
+                }
+            </table>
+        </div>
+
+        <div class="panel-footer panel-danger" style="padding:1px 1px;">
+
+
+            <div id="contentPager">
+                @Html.PagedListPager(Model.CategoryList, page => Url.Action("CategoryList", new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))
+            </div>
+
+            @*@Html.PagedListPager(
+            Model.CategoryList,
+            page => Url.Action("CategoryList",
+                new { page }),
+                PagedListRenderOptions.EnableUnobtrusiveAjaxReplacing(new AjaxOptions { UpdateTargetId = "CategoryPagingContainer" })
+        )*@
+
+        </div>
+    </div>
+}
+

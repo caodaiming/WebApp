@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A85449C2-314D-4F93-B449-80EE376F1D23}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ConsoleApp.Test</RootNamespace>
+    <AssemblyName>ConsoleApp.Test</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Models\AspNetRole.cs" />
+    <Compile Include="Models\AspNetUser.cs" />
+    <Compile Include="Models\AspNetUserClaim.cs" />
+    <Compile Include="Models\AspNetUserLogin.cs" />
+    <Compile Include="Models\Comment.cs" />
+    <Compile Include="Models\CommentUser.cs" />
+    <Compile Include="Models\Focus.cs" />
+    <Compile Include="Models\FollowRequest.cs" />
+    <Compile Include="Models\FollowUser.cs" />
+    <Compile Include="Models\Goal.cs" />
+    <Compile Include="Models\GoalStatu.cs" />
+    <Compile Include="Models\Group.cs" />
+    <Compile Include="Models\GroupComment.cs" />
+    <Compile Include="Models\GroupCommentUser.cs" />
+    <Compile Include="Models\GroupGoal.cs" />
+    <Compile Include="Models\GroupInvitation.cs" />
+    <Compile Include="Models\GroupRequest.cs" />
+    <Compile Include="Models\GroupUpdate.cs" />
+    <Compile Include="Models\GroupUpdateSupport.cs" />
+    <Compile Include="Models\GroupUpdateUser.cs" />
+    <Compile Include="Models\GroupUser.cs" />
+    <Compile Include="Models\Mapping\AspNetRoleMap.cs" />
+    <Compile Include="Models\Mapping\AspNetUserClaimMap.cs" />
+    <Compile Include="Models\Mapping\AspNetUserLoginMap.cs" />
+    <Compile Include="Models\Mapping\AspNetUserMap.cs" />
+    <Compile Include="Models\Mapping\CommentMap.cs" />
+    <Compile Include="Models\Mapping\CommentUserMap.cs" />
+    <Compile Include="Models\Mapping\FocusMap.cs" />
+    <Compile Include="Models\Mapping\FollowRequestMap.cs" />
+    <Compile Include="Models\Mapping\FollowUserMap.cs" />
+    <Compile Include="Models\Mapping\GoalMap.cs" />
+    <Compile Include="Models\Mapping\GoalStatuMap.cs" />
+    <Compile Include="Models\Mapping\GroupCommentMap.cs" />
+    <Compile Include="Models\Mapping\GroupCommentUserMap.cs" />
+    <Compile Include="Models\Mapping\GroupGoalMap.cs" />
+    <Compile Include="Models\Mapping\GroupInvitationMap.cs" />
+    <Compile Include="Models\Mapping\GroupMap.cs" />
+    <Compile Include="Models\Mapping\GroupRequestMap.cs" />
+    <Compile Include="Models\Mapping\GroupUpdateMap.cs" />
+    <Compile Include="Models\Mapping\GroupUpdateSupportMap.cs" />
+    <Compile Include="Models\Mapping\GroupUpdateUserMap.cs" />
+    <Compile Include="Models\Mapping\GroupUserMap.cs" />
+    <Compile Include="Models\Mapping\MetricMap.cs" />
+    <Compile Include="Models\Mapping\RegistrationTokenMap.cs" />
+    <Compile Include="Models\Mapping\SecurityTokenMap.cs" />
+    <Compile Include="Models\Mapping\SupportInvitationMap.cs" />
+    <Compile Include="Models\Mapping\SupportMap.cs" />
+    <Compile Include="Models\Mapping\UpdateMap.cs" />
+    <Compile Include="Models\Mapping\UpdateSupportMap.cs" />
+    <Compile Include="Models\Mapping\UserProfileMap.cs" />
+    <Compile Include="Models\Metric.cs" />
+    <Compile Include="Models\RegistrationToken.cs" />
+    <Compile Include="Models\SecurityToken.cs" />
+    <Compile Include="Models\SocialGoalContext.cs" />
+    <Compile Include="Models\Support.cs" />
+    <Compile Include="Models\SupportInvitation.cs" />
+    <Compile Include="Models\Update.cs" />
+    <Compile Include="Models\UpdateSupport.cs" />
+    <Compile Include="Models\UserProfile.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WebApp.Data\WebApp.Data.csproj">
+      <Project>{bf784a1a-7681-48ed-8332-c6c796def5ae}</Project>
+      <Name>WebApp.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebApp.Model\WebApp.Model.csproj">
+      <Project>{d248e554-acb2-4d83-95ca-732b237101b5}</Project>
+      <Name>WebApp.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

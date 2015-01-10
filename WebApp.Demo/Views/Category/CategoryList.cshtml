@@ -1,0 +1,9 @@
+﻿@model WebApp.Demo.ViewModels.CategoryPageViewModel
+@{
+    ViewBag.Title = "部品分类";
+}
+<div id="CategoryPagingContainer">
+    @Html.Partial("_CategoriesTable", Model);
+</div>
+
+
