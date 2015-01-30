@@ -7,20 +7,20 @@ using System.Web.Mvc;
 
 namespace WebApp.Web.Core.ActionFilters
 {
-   public class AntiForgeryTokenFilterProvider:System.Web.Mvc.IFilterProvider
+    public class AntiForgeryTokenFilterProvider : System.Web.Mvc.IFilterProvider
     {
-       public IEnumerable<Filter> GetFilters(ControllerContext controllerContext, ActionDescriptor actionDescriptor)
-       {
-           List<Filter> result = new List<Filter>();
+        public IEnumerable<Filter> GetFilters(ControllerContext controllerContext, ActionDescriptor actionDescriptor)
+        {
+            List<Filter> result = new List<Filter>();
 
-           string incomingVerb = controllerContext.HttpContext.Request.HttpMethod;
+            string incomingVerb = controllerContext.HttpContext.Request.HttpMethod;
 
-           if (String.Equals(incomingVerb,"POST",StringComparison.OrdinalIgnoreCase))
-           {
-               result.Add(new Filter(new ValidateAntiForgeryTokenAttribute(),FilterScope.Global,null));
-           }
+            if (String.Equals(incomingVerb, "POST", StringComparison.OrdinalIgnoreCase))
+            {
+                result.Add(new Filter(new ValidateAntiForgeryTokenAttribute(), FilterScope.Global, null));
+            }
 
-           return result;
-       }
+            return result;
+        }
     }
 }
